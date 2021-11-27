@@ -857,13 +857,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059494143}
-  m_LocalRotation: {x: -0, y: -0, z: 0.3084304, w: -0.951247}
-  m_LocalPosition: {x: -1.89, y: -1.25, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.18397689, w: -0.9829306}
+  m_LocalPosition: {x: -2.1, y: -1.91, z: 0}
   m_LocalScale: {x: 0.3838, y: 0.3838, z: 0.3838}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.929}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21.203}
 --- !u!1 &1072300647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,7 +2477,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019239643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.3196, y: -2.0454, z: 0}
+  m_LocalPosition: {x: -10.25, y: -2.63, z: 0}
   m_LocalScale: {x: 3.5024335, y: 0.5426, z: 1}
   m_Children: []
   m_Father: {fileID: 641301975}
@@ -2498,6 +2498,7 @@ GameObject:
   - component: {fileID: 282271740868178360}
   - component: {fileID: 4269684702319540118}
   - component: {fileID: 2593855982723478414}
+  - component: {fileID: 282271740868178361}
   m_Layer: 6
   m_Name: adventurer-v1.5-Sheet_0 1
   m_TagString: Player
@@ -2535,6 +2536,28 @@ MonoBehaviour:
       m_Calls: []
   minLength: 100
   maxLength: 400
+--- !u!66 &282271740868178361
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282271740868178359}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths: []
+  m_CompositePaths:
+    m_Paths: []
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
 --- !u!4 &433641268065442001
 Transform:
   m_ObjectHideFlags: 0
@@ -2657,7 +2680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteTransform: {fileID: 433641268065442001}
-  jumpForce: 1.4
+  jumpForce: 1.2
 --- !u!212 &4587126858200356761
 SpriteRenderer:
   m_ObjectHideFlags: 0
