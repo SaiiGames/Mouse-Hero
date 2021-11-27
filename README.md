@@ -1,2 +1,2 @@
-# Twitch-oriented Game
- A game dedicated for twitch streamer.
+# Mouse Hero
+ A hero goes through a series of challenges... with mouse!
