@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4269684702489757622}
   - component: {fileID: 2593855982891140014}
   - component: {fileID: 3345695976240722657}
+  - component: {fileID: 6112597320627244160}
   m_Layer: 6
   m_Name: adventurer-v1.5-Sheet_0 1
   m_TagString: Player
@@ -125,6 +126,8 @@ MonoBehaviour:
     m_Bits: 183
   m_GroundCheck: {fileID: 3176865474931650542}
   m_CeilingCheck: {fileID: 1612895755260502918}
+  m_LeftCheck: {fileID: 0}
+  m_RightCheck: {fileID: 0}
   m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
@@ -151,6 +154,7 @@ MonoBehaviour:
   _lineRenderer: {fileID: 1768921025191719802}
   characterSprite: {fileID: 4769091985345151463}
   showTraceHelper: 1
+  LastPosition: {x: 0, y: 0}
 --- !u!114 &2593855982891140014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +191,19 @@ CompositeCollider2D:
     m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
+--- !u!114 &6112597320627244160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282271740773171607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04c5229ac8a4314dac18e7b40eb08f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lineRenderer: {fileID: 0}
 --- !u!1 &2421802039225708578
 GameObject:
   m_ObjectHideFlags: 0

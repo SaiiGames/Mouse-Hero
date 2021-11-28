@@ -21,12 +21,17 @@ public class Movement : MonoBehaviour
     private static readonly int IsGrounded = Animator.StringToHash("isGrounded");
     [SerializeField] private GameObject characterSprite;
     public bool showTraceHelper = false;
+    public Vector2 LastPosition;
     private void Awake()
     {
         _controller = GetComponent<CharacterController2D>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = spriteTransform.GetComponent<Animator>();
         
+    }
+    private void Start()
+    {
+        LastPosition = transform.position;
     }
 
     private void Update()
@@ -40,8 +45,9 @@ public class Movement : MonoBehaviour
         {
             _startDrag = false;
             _endPos = Input.mousePosition;
-            
+            LastPosition = transform.position;
             _controller.Jump(_endPos-_startPos,jumpForce);
+            
         }
         if (showTraceHelper)
         {
@@ -79,34 +85,22 @@ public class Movement : MonoBehaviour
         
     }
 
+    public void CheckFreeFall()
+    {
+        // Debug.Log("checking free fall");
+        var fallLength = transform.position.y - LastPosition.y;
+        // Debug.Log(fallLength);
+        LastPosition = transform.position;
+        if (fallLength < -8)
+        {
+            FailCounter.Count++;
+            Debug.Log("freeFall");
+        }
+    }
+    
     void TraceHelper()
     {
-        if (Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            _lineRenderer.gameObject.SetActive(false);
-        }
-        if (CharacterController2D.m_Grounded)
-        {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                _lineRenderer.gameObject.SetActive(true);
-                _lineRenderer.SetPosition(1,Vector3.zero);
-            }
-            else if(Input.GetKey(KeyCode.Mouse0))
-            {
-                
-                Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                var worldStartPos = Camera.main.ScreenToWorldPoint(_startPos);
-                Vector2 distance = mousePos - new Vector2(worldStartPos.x,worldStartPos.y);
-                // Debug.Log(distance);
-                // var position = transform.position;
-                // Vector2 targetPos = new Vector2(position.x,position.y) + distance;
-                _lineRenderer.SetPosition(1,distance/3);
-
-            }
-            
-        }
-
+        GetComponent<TraceHelper>().ShowTrace(_startPos);
     }
 
     

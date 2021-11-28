@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,9 +13,10 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
+	[SerializeField] private Transform m_LeftCheck,m_RightCheck;
 	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
 
-	const float k_GroundedRadius = .4f; // Radius of the overlap circle to determine if grounded
+	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	public static bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
@@ -65,6 +67,7 @@ public class CharacterController2D : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
+		
 	}
 
 
@@ -158,6 +161,26 @@ public class CharacterController2D : MonoBehaviour
 			m_Rigidbody2D.AddForce(dirction*length*jumpForce);
 		}
 	}
+	public void CheckIfLock()
+	{
+		Collider2D collidersLeft = Physics2D.OverlapCircle(m_LeftCheck.position, 0.2f,m_WhatIsGround);
+		Collider2D collidersRight = Physics2D.OverlapCircle(m_RightCheck.position, 0.2f,m_WhatIsGround);
+		// Debug.Log(collidersLeft.ToString() + collidersRight.ToString());
+		if (!m_Grounded && m_Velocity.magnitude < 0.01 )
+		{
+			if (collidersRight != null)
+			{
+				m_Rigidbody2D.AddForce(Vector2.left*1*10);
+
+			}
+			else if (collidersLeft != null)
+			{
+				m_Rigidbody2D.AddForce(Vector2.right*1*10);
+			}
+			
+		}
+		
+	}
 
 	private void Flip()
 	{
@@ -168,5 +191,10 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	private void OnCollisionStay2D(Collision2D other)
+	{
+		CheckIfLock();	
 	}
 }
