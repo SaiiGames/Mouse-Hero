@@ -56,12 +56,12 @@ public class Movement : MonoBehaviour
         _animator.SetFloat(HorizonAbsSpeed,Mathf.Abs(speed.x));
         _animator.SetBool(IsGrounded,CharacterController2D.m_Grounded);
         // Debug.Log(speed.x);
-        if (speed.x < 0 &&!_faceLeft)
+        if (speed.x < -0.1 &&!_faceLeft)
         {
             Flip(-1);
             _faceLeft = !_faceLeft;
         }
-        if (speed.x > 0 && _faceLeft)
+        if (speed.x > 0.1 && _faceLeft)
         {
             Flip(1);
             _faceLeft = !_faceLeft;

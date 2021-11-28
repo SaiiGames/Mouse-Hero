@@ -37,6 +37,7 @@ public class CustomCursor : MonoBehaviour
 		
 		if (Input.GetKeyDown(KeyCode.Mouse0) && CharacterController2D.m_Grounded)
 		{
+			_lineRenderer.enabled = true;
 			isDrag = true;			
 			_lineRenderer.endColor = new Color(255, 255, 255, 255);
 			_lineRenderer.SetPosition(0,transform.position);
@@ -48,6 +49,8 @@ public class CustomCursor : MonoBehaviour
 		}
 		else if (!Input.GetKey(KeyCode.Mouse0))
 		{
+			_lineRenderer.enabled = false;
+
 			_lineRenderer.SetPosition(0,Vector2.zero);
 			_lineRenderer.SetPosition(1,Vector2.zero);
 
@@ -60,7 +63,13 @@ public class CustomCursor : MonoBehaviour
 
 	void ChangeCursorSprite()
 	{
-		if (isDrag)
+		if(!isDrag && CharacterController2D.m_Grounded)
+		{
+			_image.color = new Color(255, 255, 255, 1f);
+			_tweener = _image.DOFade(0.2f, 0.2f);
+			_image.sprite = okImage;
+		}
+		else if (isDrag && CharacterController2D.m_Grounded)
 		{
 			_image.sprite = dragImage;
 			_tweener = _image.DOFade(1f, 0.2f);
@@ -71,12 +80,7 @@ public class CustomCursor : MonoBehaviour
 			_image.color = new Color(255, 255, 255, 0.2f);
 			_image.sprite = forbidImage;
 		}
-		else
-		{
-			_image.color = new Color(255, 255, 255, 1f);
-			_tweener = _image.DOFade(0.2f, 0.2f);
-			_image.sprite = okImage;
-		}
+		
 	}
 
 	
