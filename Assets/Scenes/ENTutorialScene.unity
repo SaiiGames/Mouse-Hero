@@ -246,10 +246,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutorial
+  m_text: "\u600E\u6837\u64CD\u4F5C?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5e972f037f9d6214cbd1040913336f65, type: 2}
-  m_sharedMaterial: {fileID: -142305132881561443, guid: 5e972f037f9d6214cbd1040913336f65, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b006c7346feba534b82c711d428d7848, type: 2}
+  m_sharedMaterial: {fileID: -5716868350001242024, guid: b006c7346feba534b82c711d428d7848, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -273,10 +273,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 154.81
-  m_fontSizeBase: 154.81
+  m_fontSize: 72
+  m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -714,7 +714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076296, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000022888, y: -0.0000076293945}
   m_SizeDelta: {x: 601.697, y: 119.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1369059209
@@ -737,9 +737,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Left click and drag your mouse...
-
-    then release!'
+  m_text: "\u6309\u4E0B\u5E76\u62D6\u52A8\u9F20\u6807...\n\u7136\u540E\u677E\u5F00\uFF01"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9739870e569b64843a268d095ba9a75e, type: 2}
   m_sharedMaterial: {fileID: -5613065188337194282, guid: 9739870e569b64843a268d095ba9a75e, type: 2}
@@ -1537,7 +1535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your character jumps at the direction your mouse just moved
+  m_text: "\u89D2\u8272\u4F1A\u5411\u9F20\u6807\u6ED1\u52A8\u7684\u65B9\u5411\u8DF3\u8DC3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9739870e569b64843a268d095ba9a75e, type: 2}
   m_sharedMaterial: {fileID: -5613065188337194282, guid: 9739870e569b64843a268d095ba9a75e, type: 2}

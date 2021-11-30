@@ -91,10 +91,10 @@ public class Movement : MonoBehaviour
         var fallLength = transform.position.y - LastPosition.y;
         // Debug.Log(fallLength);
         LastPosition = transform.position;
-        if (fallLength < -8)
+        if (fallLength < -5)
         {
             FailCounter.Count++;
-            Debug.Log("freeFall");
+            // Debug.Log("freeFall");
         }
     }
     
