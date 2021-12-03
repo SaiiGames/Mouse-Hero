@@ -23,7 +23,7 @@ Game remains in-development before we consider it as completed. And while this g
 This game is an assignment of Game Prototyping Course. A huge thank to my teacher who has studied Game Design in New York for 4 years and is inspring when it comes to teach me on how to make a great game prototype. However, learning game design is expensive, and by donating you can help me better continue my journey. 
 
 
-BE ADVISED! THIS GAME IS STILL IN DEVELOPMENT. SOME OF THE IN-GAME TEXT IS NOT FULLY TRANSLATED INTO ENGLISH.
-
 ## Stay Tuned!
 [itch.io page (Secret)](https://capsul.itch.io/mouse-hero?secret=ob1KagubYM2ycrtOsdVtrRtiFJU)
+
+BE ADVISED! THIS GAME IS STILL IN DEVELOPMENT. SOME OF THE IN-GAME TEXT IS NOT FULLY TRANSLATED INTO ENGLISH.
