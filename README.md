@@ -16,14 +16,9 @@ In mouse hero, you are doomed to experience difficulties. Every mistake you make
 ## Special and Innovating control
 Unplug your keyboard and console! You don't need that anymore, cuz this game can be played with only mouse! Explore this world with this new control scheme. Don't worry, we have prepared with handy tool and assist mode to help you if you find this scheme difficult to get familiar.
 
-## Constantly Growing World
-Game remains in-development before we consider it as completed. And while this game is still under development, more versalite world and levels will be added into the game for you to experience.
-
-## Help with Education on Game Dev
-This game is an assignment of Game Prototyping Course. A huge thank to my teacher who has studied Game Design in New York for 4 years and is inspring when it comes to teach me on how to make a great game prototype. However, learning game design is expensive, and by donating you can help me better continue my journey. 
-
 
 ## Stay Tuned!
+More information will be released at itch.io game page:
 [itch.io page (Secret)](https://capsul.itch.io/mouse-hero?secret=ob1KagubYM2ycrtOsdVtrRtiFJU)
 
-BE ADVISED! THIS GAME IS STILL IN DEVELOPMENT. SOME OF THE IN-GAME TEXT IS NOT FULLY TRANSLATED INTO ENGLISH.
+BE ADVISED! THIS GAME IS STILL IN DEVELOPMENT. SOME OF THE IN-GAME TEXT HAS NOT BEEN FULLY TRANSLATED INTO ENGLISH.
