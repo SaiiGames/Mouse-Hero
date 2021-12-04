@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Music
   - Terrain
+  - Checkpoints
   layers:
   - Default
   - TransparentFX

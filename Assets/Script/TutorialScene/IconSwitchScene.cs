@@ -19,6 +19,7 @@ public class IconSwitchScene : MonoBehaviour
 	public float cutsceneDuration = 4f;
 	public AudioSource backgroundMusic;
 
+	private bool inTransition = false;
 	private GameObject iconWhileWait;
 	private void Awake()
 	{
@@ -35,7 +36,7 @@ public class IconSwitchScene : MonoBehaviour
 		}
 		catch (Exception e)
 		{
-			Debug.Log("Missing Music Object!");
+			Debug.Log("Missing Music Object!" + e);
 		}
 	}
 
@@ -47,11 +48,13 @@ public class IconSwitchScene : MonoBehaviour
 		}
 		if (readyForSwitch)
 		{
-			if (Input.GetKey(KeyCode.Mouse2))
+			if (Input.GetKey(KeyCode.Mouse2) && !inTransition)
 			{
+				inTransition = true;
 				StartCoroutine(WaitAndSwitch());
 				CancelInvoke(nameof(EmphasisIcon));
 				transform.DOScale(new Vector3(0f, 0f, 0f), 0.5f);
+				
 			}
 		}
 	}

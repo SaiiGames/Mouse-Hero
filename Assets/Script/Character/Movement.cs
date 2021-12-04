@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Movement : MonoBehaviour
 {
@@ -22,12 +23,19 @@ public class Movement : MonoBehaviour
     [SerializeField] private GameObject characterSprite;
     public bool showTraceHelper = false;
     public Vector2 LastPosition;
+    public UnityEvent OnFallEvent;
+
+
+    public static GameObject instance;
+    
+
     private void Awake()
     {
         _controller = GetComponent<CharacterController2D>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = spriteTransform.GetComponent<Animator>();
-        
+        instance = gameObject;
+
     }
     private void Start()
     {
@@ -94,6 +102,7 @@ public class Movement : MonoBehaviour
         if (fallLength < -5)
         {
             FailCounter.Count++;
+            OnFallEvent.Invoke();
             // Debug.Log("freeFall");
         }
     }

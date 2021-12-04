@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3a466606cfd38b4ab96cbe47db49e3d, type: 3}
+  m_Name: ENOnFall
+  m_EditorClassIdentifier: 
+  RandomOrder: 1
+  dialogues:
+  - One more time...
+  - Just like life, isn't it?
+  - Be a little smarter, please?
+  - Take it easy...
+  - easy...easy...
+  - I'm sure you can come along.
+  - Now I am back here...again.
+  - Welcome home...
+  - 'Don''t call it so fast...
+
+    We still have promise'
+  - So far...so good.

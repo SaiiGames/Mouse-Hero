@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3a466606cfd38b4ab96cbe47db49e3d, type: 3}
+  m_Name: OnElevateStage
+  m_EditorClassIdentifier: 
+  RandomOrder: 1
+  dialogues:
+  - "\u597D\u8D77\u6765\u4E86\uFF01"
+  - "\u4E0D\u9519\uFF01\n\u5C31\u8FD9\u6837\u4E00\u70B9\u4E00\u70B9\u524D\u8FDB"
+  - "\u6211\u80FD\u770B\u5230\u80DC\u5229\u7684\u66D9\u5149\u4E86"
+  - "\u5C0F\u5FC3\u4E00\u70B9...\u522B\u529F\u4E8F\u4E00\u7BD1"
+  - "\u522B\u7740\u6025..."
+  - "\u8FD9\u6B21\u6211\u89C9\u5F97\u6709\u620F\uFF01"
+  - 

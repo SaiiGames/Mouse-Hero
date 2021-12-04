@@ -14,11 +14,16 @@ public class CustomCursor : MonoBehaviour
 	private LineRenderer _lineRenderer;
 	private bool isDrag = false;
 	public Sprite okImage, forbidImage,dragImage;
-	
+
+	public bool hideCursorOnly;
 	
 	private void Awake()
 	{
 		Cursor.visible = false;
+		if (hideCursorOnly)
+		{
+			return;
+		}
 		// Cursor.lockState = CursorLockMode.Locked;
 		_cameraInstance = Camera.main;
 		_image = GetComponent<SpriteRenderer>();
@@ -27,11 +32,19 @@ public class CustomCursor : MonoBehaviour
 
 	private void Start()
 	{
+		if (hideCursorOnly)
+		{
+			return;
+		}
 		_image.color = new Color(255, 255, 255, 0);
 	}
 
 	private void LateUpdate()
 	{
+		if (hideCursorOnly)
+		{
+			return;
+		}
 		Vector2 cursorPos = _cameraInstance.ScreenToWorldPoint(Input.mousePosition);
 		transform.position = cursorPos;
 
