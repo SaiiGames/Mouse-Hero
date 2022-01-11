@@ -732,11 +732,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
       propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1700619533}
     - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 286656104}
+    - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
       propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
@@ -744,11 +756,23 @@ PrefabInstance:
       value: OnFall
       objectReference: {fileID: 0}
     - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ShakeCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
       propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DialogueSystem, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CameraEffects, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
       propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269684702489757622, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5084880141385657034, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
@@ -773,7 +797,7 @@ PrefabInstance:
       objectReference: {fileID: 234986247}
     - target: {fileID: 8063198644167231054, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8063198644167231054, guid: 155cf802bcdfa4e41a8f4fd8f09a4c60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1222,6 +1246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 286656103}
   - component: {fileID: 286656102}
+  - component: {fileID: 286656104}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -1280,8 +1305,20 @@ Transform:
   m_Children:
   - {fileID: 813968685}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &286656104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286656101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7825f5b0093b76349ae5bd8e7571c257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &332018532
 GameObject:
   m_ObjectHideFlags: 0
@@ -4216,7 +4253,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: in-development Version
+  m_Text: In-development Version
 --- !u!222 &566104654
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35550,7 +35587,7 @@ Transform:
   - {fileID: 1056730366}
   - {fileID: 2108772263}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782861310
 GameObject:
@@ -42309,7 +42346,7 @@ Transform:
   m_Children:
   - {fileID: 1692074612}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1632208736
 MonoBehaviour:
@@ -42422,8 +42459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448816d2b88b04b469cb6199ee73fca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ForestBackground: {fileID: 21300000, guid: 26c1b1b3eed9f5f469c0d0e50f54d082, type: 3}
-  SnowBackground: {fileID: 21300000, guid: c28328227ab0dfe45ae0d4424feca542, type: 3}
+  ForestBackground: {fileID: 517269120}
+  SnowBackground: {fileID: 1631645847}
 --- !u!1 &1700619527
 GameObject:
   m_ObjectHideFlags: 0
