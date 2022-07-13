@@ -19,6 +19,6 @@ Unplug your keyboard and console! You don't need that anymore, cuz this game can
 
 ## Stay Tuned!
 More information will be released at itch.io game page:
-[itch.io page (Secret)](https://capsul.itch.io/mouse-hero?secret=ob1KagubYM2ycrtOsdVtrRtiFJU)
+[itch.io page](https://capsul.itch.io/mouse-hero)
 
 BE ADVISED! THIS GAME IS STILL IN DEVELOPMENT. SOME OF THE IN-GAME TEXT HAS NOT BEEN FULLY TRANSLATED INTO ENGLISH.
