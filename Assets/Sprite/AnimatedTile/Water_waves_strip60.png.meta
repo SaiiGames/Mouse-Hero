@@ -384,6 +384,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2992,6 +2993,127 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Water_waves_strip60_26: -8403280367211163767
+      Water_waves_strip60_110: 3246801889936899208
+      Water_waves_strip60_21: -3268552790316769433
+      Water_waves_strip60_80: 235630005832816077
+      Water_waves_strip60_67: 4715132831298250874
+      Water_waves_strip60_94: 4492466102033192306
+      Water_waves_strip60_42: -3229869886809166741
+      Water_waves_strip60_31: -962683259409684391
+      Water_waves_strip60_81: -4720363744150634468
+      Water_waves_strip60_95: 2249280468394193145
+      Water_waves_strip60_83: 1566548124179628239
+      Water_waves_strip60_51: 3065192873887644596
+      Water_waves_strip60_85: 7356048782057763635
+      Water_waves_strip60_65: 1615754656274333764
+      Water_waves_strip60_61: 795139267634389377
+      Water_waves_strip60_72: 7867089496133454693
+      Water_waves_strip60_78: 3734422206268302915
+      Water_waves_strip60_27: 1761150768159411055
+      Water_waves_strip60_14: -8220973228997405617
+      Water_waves_strip60_100: 8507938652612475050
+      Water_waves_strip60_115: 8878682781994076634
+      Water_waves_strip60_52: 5716090149072184985
+      Water_waves_strip60_70: 1460970431086013000
+      Water_waves_strip60_36: 3840631666708633121
+      Water_waves_strip60_66: -7509261112165599176
+      Water_waves_strip60_34: -5029894423131109094
+      Water_waves_strip60_107: 3098328361307987859
+      Water_waves_strip60_23: 9179142849233032301
+      Water_waves_strip60_43: -968952982301637336
+      Water_waves_strip60_87: 6051401135520019430
+      Water_waves_strip60_102: -1587055659203403775
+      Water_waves_strip60_1: -4397774728544795581
+      Water_waves_strip60_3: -570819989031662326
+      Water_waves_strip60_30: -6686435974434148998
+      Water_waves_strip60_71: -2684391888515019813
+      Water_waves_strip60_89: 3302222457569107331
+      Water_waves_strip60_88: 7987985378062290524
+      Water_waves_strip60_92: -7582482186192801432
+      Water_waves_strip60_103: -3603323257582191335
+      Water_waves_strip60_105: 187616000866279406
+      Water_waves_strip60_46: -8209655343308945459
+      Water_waves_strip60_84: 5505719379387225977
+      Water_waves_strip60_68: 2532149360760572630
+      Water_waves_strip60_91: -290512477997686282
+      Water_waves_strip60_33: 6909188249016747953
+      Water_waves_strip60_12: 1634822180489000999
+      Water_waves_strip60_113: -7531614515008142835
+      Water_waves_strip60_119: 7455063671104668055
+      Water_waves_strip60_58: 335560332438273072
+      Water_waves_strip60_109: -2317769693317215161
+      Water_waves_strip60_25: 553758935014915550
+      Water_waves_strip60_59: 5723261585693308364
+      Water_waves_strip60_75: 6937423626074865402
+      Water_waves_strip60_96: 7500376561338443918
+      Water_waves_strip60_22: -3272269182494066157
+      Water_waves_strip60_99: -6687219408389771675
+      Water_waves_strip60_5: 7650540214994634073
+      Water_waves_strip60_11: -4883878125482777790
+      Water_waves_strip60_64: -8913935734571540690
+      Water_waves_strip60_49: -2265690439361599864
+      Water_waves_strip60_117: -2505374874840769631
+      Water_waves_strip60_47: 2077094679762965593
+      Water_waves_strip60_55: 1372983657167843392
+      Water_waves_strip60_35: -1080010419511924398
+      Water_waves_strip60_63: 9184966172951285144
+      Water_waves_strip60_50: 5653034640497126866
+      Water_waves_strip60_56: 7533582134680103708
+      Water_waves_strip60_62: 345295362106031463
+      Water_waves_strip60_116: -1335630686787102789
+      Water_waves_strip60_73: 2784372514096029679
+      Water_waves_strip60_4: -4151719479909350293
+      Water_waves_strip60_76: 4767154956548360488
+      Water_waves_strip60_29: 5963170045489072773
+      Water_waves_strip60_74: 4239506903427153311
+      Water_waves_strip60_9: -5964791631139149598
+      Water_waves_strip60_7: -1520784196843800988
+      Water_waves_strip60_112: -603874023199444952
+      Water_waves_strip60_32: -7063374928477995030
+      Water_waves_strip60_41: 4803877293260062982
+      Water_waves_strip60_45: -4502152579575264744
+      Water_waves_strip60_60: -1268520890298056464
+      Water_waves_strip60_17: -7682268458633611037
+      Water_waves_strip60_93: 4954224842041288320
+      Water_waves_strip60_20: 5752882573842473708
+      Water_waves_strip60_104: 4104587900836612214
+      Water_waves_strip60_39: -8424184350139709929
+      Water_waves_strip60_114: -7091370953728321659
+      Water_waves_strip60_69: -8054400445358248518
+      Water_waves_strip60_0: -7223711027215971417
+      Water_waves_strip60_2: 295729022600800439
+      Water_waves_strip60_10: -7483327103965192253
+      Water_waves_strip60_19: -6387269446360606797
+      Water_waves_strip60_38: -7056106958936834206
+      Water_waves_strip60_54: -8349769020052486841
+      Water_waves_strip60_28: 6805920437877138185
+      Water_waves_strip60_53: 7205943715370410659
+      Water_waves_strip60_97: 5091495487937695063
+      Water_waves_strip60_77: 4653837436287493833
+      Water_waves_strip60_101: -6410428305481696083
+      Water_waves_strip60_18: -8850650174895991571
+      Water_waves_strip60_8: -3661217958878140468
+      Water_waves_strip60_13: -8214211268056634571
+      Water_waves_strip60_79: -4773302289371234283
+      Water_waves_strip60_16: -5043094548405972367
+      Water_waves_strip60_82: -4607388043473311581
+      Water_waves_strip60_15: -2473816494865547874
+      Water_waves_strip60_98: -7249466845837390346
+      Water_waves_strip60_44: -1321279499387045979
+      Water_waves_strip60_37: 8146854419128166768
+      Water_waves_strip60_108: -7535336433809085021
+      Water_waves_strip60_106: 8523489180611055816
+      Water_waves_strip60_86: 5748610714458423513
+      Water_waves_strip60_48: -5088765372108806450
+      Water_waves_strip60_90: 15980848016928132
+      Water_waves_strip60_40: 2209221499814209945
+      Water_waves_strip60_57: 7135419703849713463
+      Water_waves_strip60_118: 4245745753697508671
+      Water_waves_strip60_24: 6053750934461406559
+      Water_waves_strip60_6: 6884645891292158947
+      Water_waves_strip60_111: -7190752141864559522
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

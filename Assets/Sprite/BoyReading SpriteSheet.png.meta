@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      BoyReading SpriteSheet_3: -5798293904887218568
+      BoyReading SpriteSheet_0: 2220880162947950812
+      BoyReading SpriteSheet_1: 4567448262357727332
+      BoyReading SpriteSheet_2: 8717396375200797257
+      BoyReading SpriteSheet_4: -3130651615202683604
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
